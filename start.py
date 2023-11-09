@@ -116,7 +116,7 @@ def public(filename):
     """
     访问public文件夹的文件
     """
-    return send_from_directory('public', filename)
+    return send_from_directory('dist', filename)
 
 @app.route('/upload/<path:upload_file>')
 def upload_file(upload_file):
